@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #07111f; color: #e6f4f8; font-family: Arial, Helvetica, sans-serif; }
+body:before { content:""; position:fixed; inset:0; pointer-events:none; background:radial-gradient(circle at 15% 0%,rgba(18,188,168,.12),transparent 30%),radial-gradient(circle at 90% 20%,rgba(33,212,232,.10),transparent 28%); }
+.glass { background: linear-gradient(145deg, rgba(19,42,64,.78), rgba(8,23,40,.86)); border: 1px solid rgba(121,229,238,.14); box-shadow: 0 10px 34px rgba(0,0,0,.18); backdrop-filter: blur(14px); }
+.metric { text-shadow: 0 0 22px rgba(33,212,232,.34); }
+input { outline: none; }

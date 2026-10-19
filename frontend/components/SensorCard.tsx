@@ -1,0 +1,2 @@
+import type { ReactNode } from "react";
+export default function SensorCard({ title, icon, children, alert }: { title: string; icon: ReactNode; children: ReactNode; alert?: boolean }) { return <section className={`glass rounded-2xl p-5 ${alert ? "border-amber-400/50" : ""}`}><div className="mb-5 flex items-center justify-between"><h2 className="text-sm font-medium text-slate-300">{title}</h2><span className={`rounded-lg p-2 ${alert ? "bg-amber-400/15 text-amber-300" : "bg-cyan/10 text-cyan"}`}>{icon}</span></div>{children}</section>; }
